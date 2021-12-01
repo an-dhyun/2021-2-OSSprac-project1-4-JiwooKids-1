@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <body>
+    <form id="final" action = "/result" method = "POST">
+        <table border = 1>
+            <tr>
+                <th> Name </th>
+                <td><input type = "text" name = "Name" value="{{ detail['Name'] }}" readonly/></td>
+            </tr>
+            <tr>
+                <th> StudentNumber </th>
+                <td><input type = "text" name = "StudentNumber" value="{{ detail['StudentNumber'] }}" readonly/></td>
+            </tr>
+            <tr>
+                <th> Gender </th>
+                <td><input type = "text" name = "Gender" value="{{ detail['Gender'] }}" readonly/></td>
+            </tr>
+            <tr>
+                <th> Major </th>
+                <td><input type = "text" name = "Major" value="{{ detail['Major'] }}" readonly/></td>
+            </tr>
+        </table>
+    </form>
+    <button onclick="history.back()" style="float: left;">MODIFY</button> 
+    &nbsp; <input type='submit' value='SUBMIT' form="final">
+    </body>
+</html>
